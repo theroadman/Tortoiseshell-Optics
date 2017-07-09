@@ -68,6 +68,10 @@ h3 {
   padding: 0 2rem;
 }
 
+.nav-menu {
+  display: none;
+}
+
 /********BANNER ****/
 
 .banner {
@@ -95,7 +99,6 @@ h3 {
 .log-1, .log-2, .log-3 {
   width: 8rem;
   text-align: center;
-
 }
 
 .img-col {
@@ -163,4 +166,139 @@ footer {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+
+/*************************MEDIA QUERY **********************/
+
+@media only screen and (max-width: 960px) {
+  header, .container {
+    width: 100%;
+  }
+
+  .background {
+    width: 100%;
+    height: 22rem;
+    padding-top: 0rem;
+  }
+
+  .banner {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    margin: 5rem 2rem 0 0;
+  }
+}
+
+
+@media only screen and (max-width: 770px) {
+  .background {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .banner {
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin: 9rem 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem 3rem;
+  }
+
+  /***********3 PROMOTIONS****************/
+
+  .promo-logo {
+    margin: 3.77rem auto;
+    height: auto;
+    display: block;
+    font-size: 0.77rem;
+  }
+
+  .log-1, .log-2, .log-3 {
+    width: 8rem;
+    text-align: center;
+    margin: 1.54rem auto;
+
+  }
+
+  .img-col {
+    height: auto;
+    display: block;
+  }
+
+  .img-col img {
+    margin: 1rem auto;
+  }
+
+  .img-col span {
+    margin: 0 auto;
+  }
+
+  .log-2 {
+    padding: 0;
+  }
+
+  /*<!--*********************** MISSION/VISION and APOINTMENTS DETAILS  -->*/
+
+  .mission {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: cadetblue;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+  }
+
+  .col-1, .col-2 {
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  .mission p {
+  padding: 0 0.5rem;
+ }
+  .col-1 {
+    margin-right: 0;
+  }
+
+
+  /*<!--********************FOOTER *************************** -->*/
+  footer {
+    padding: 0;
+    height: 6rem;
+  }
+
+  footer h3 {
+    display: none;
+  }
+
+  footer img {
+    height: 1.5rem;
+    margin: 0 auto;
+  }
+
 }

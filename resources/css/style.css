@@ -4,6 +4,12 @@
   font-family: Helvetica;
 }
 
+.container {
+  width: 960px;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /************** BACKGROUND ***********************/
 
@@ -71,7 +77,90 @@ h3 {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
-  margin: 10rem 2rem 0 0;
+  margin: 10rem -2rem 0 0;
   float: right;
   display: block;
+}
+
+
+/********************* PROMO LOGOS *************************/
+
+.promo-logo {
+  margin: 3rem auto;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.log-1, .log-2, .log-3 {
+  width: 8rem;
+  text-align: center;
+
+}
+
+.img-col {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.promo-logo img {
+  width: 3.5rem;
+  display: block;
+  object-fit: contain;
+}
+
+.promo-logo span {
+  display: block;
+  line-height: 1.2rem;
+}
+
+.log-2 {
+  padding: 0 6rem;
+}
+
+
+/*<!--*********************** MISSION/VISION and APOINTMENTS DETAILS  -->*/
+
+
+.mission {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  width: 10rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.col-1, .col-2 {
+  width: 35%;
+  line-height: 1.2;
+}
+
+.col-1 {
+  margin-right: 5%;
+}
+
+
+/*<!--********************FOOTER *************************** -->*/
+
+footer {
+  width: 100%;
+  background-color: azure;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
 }
